@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            document.write("welcome to");
-        </script>
+       
     </head>
     <body>
-
-        Demo Java Script
+        <form action="#" name="f1" id="f1">
+            Enter a <input type="text" id="t1" name="t1"><br>
+            enter b <input type="text" id="t2" name="t2"><br>
+            Res <input type="text" id="t3" name="t3">
+            <input type="button" value="add" onclick="add()">
+            <input type="reset" name="" id="">
+        </form>
         <script>
-            document.write("hello all");
+            function add(){
+            var a=5,b=6,c=0
+            a=parseInt(document.f1.t1.value);
+            b=parseInt(document.f1.t2.value);
+            c=a+b            
+            document.f1.t3.value=c;
+            }
         </script>
     </body>
 </html>
